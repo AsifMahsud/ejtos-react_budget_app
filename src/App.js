@@ -7,7 +7,8 @@ import Budget from './components/Budget';
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
-import AllocationForm from './components/AllocationForm'
+import AllocationForm from './components/AllocationForm';
+import CurrencyDropdown from './components/CurrencyDropdown';
 
 // Add code to import the other components here under
 
@@ -37,6 +38,12 @@ const App = () => {
                         /* Add ExpenseTotal component here */
                         <div className='col-sm'>
                             <ExpenseTotal />
+                        </div>
+                    }
+
+                    {
+                        <div className='col-sm'>
+                            <CurrencyDropdown />
                         </div>
                     }
 
